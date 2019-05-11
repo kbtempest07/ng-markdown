@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+	<h1>
+		Welcome to {{ title }}!
+	</h1>
+	<input [value]="color" (input)="color = $event.target.value" (valueChange)="onValueChange($event)">
+	<div ccMarkDown [value]="color" (valueChange)="onValueChange($event)">
+		Sample Text div
+	</div>
+	<p>
+		{{color}}
+	</p>
+</div>
